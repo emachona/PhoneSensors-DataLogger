@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/run"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/run"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stairs" />
+
+    <TextView
+        android:id="@+id/labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/labels"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#00000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/lay"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:text="@string/lay"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/sit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labels"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/sit"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sit"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/walk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/walk"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:text="@string/walk"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/stairs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sit"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/stairs"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/stairs"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/walk"
+        app:layout_constraintBottom_toTopOf="@+id/run"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/custom"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/button_start_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/run" />
+
+    <Button
+        android:id="@+id/button_start_stop"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto_black"
+        android:onClick="startStopRecording"
+        android:text="@string/start_title"
+        android:textAlignment="center"
+        android:textColor="#3D5AFE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/label_interface_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/label_interface_time"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:elegantTextHeight="false"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/ready_title" />
+
+    <EditText
+        android:id="@+id/customLabel"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Custom Label"
+        app:layout_constraintBottom_toTopOf="@id/button_start_stop"
+        app:layout_constraintEnd_toStartOf="@id/custom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/run"
+        app:layout_constraintVertical_bias="0.488" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

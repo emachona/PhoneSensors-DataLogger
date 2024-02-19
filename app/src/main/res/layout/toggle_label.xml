@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/labels"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#00000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/lay"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:text="@string/lay"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/sit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labels"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/sit"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/sit"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labels"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/walk"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:text="@string/walk"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/stairs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sit"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/run"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/run"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/stairs"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/stairs"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/run"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

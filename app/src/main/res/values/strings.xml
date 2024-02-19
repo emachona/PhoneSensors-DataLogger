@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sensors-Data-Logger</string>
+    <string name="alert_title">Alert</string>
+    <string name="start_title">Start</string>
+    <string name="ready_title">Ready</string>
+    <string name="detach_title">Detach</string>
+    <string name="stop_title">Stop</string>
+    <string name="write_file">File</string>
+    <string name="walk">Walking</string>
+    <string name="run">Running</string>
+    <string name="sit">Sitting</string>
+    <string name="stairs">Stairs</string>
+    <string name="lay">Laying Down</string>
+    <string name="labels">Labels</string>
+    <string name="sensors_data_logger">Sensors Data Logger</string>
+</resources>
